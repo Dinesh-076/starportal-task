@@ -1,0 +1,60 @@
+.social-media-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-wrapper {
+  background-color: #1c1c1c;
+  padding: 10px 8px;
+  margin: 0 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: #fff;
+  height: 20px;
+  width: 20px;
+}
+
+.icon.twitter {
+  color: #1DA1F2;
+}
+
+.icon.discord {
+  color: #7289DA;
+}
+
+.icon.telegram {
+  color: #0088cc;
+}
+
+.icon.spotify {
+  color: #1DB954;
+}
+
+@media (max-width: 768px) {
+  .icon-wrapper {
+    padding: 8px 6px;
+  }
+
+  .icon {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-wrapper {
+    padding: 6px 4px;
+  }
+
+  .icon {
+    height: 16px;
+    width: 16px;
+  }
+}

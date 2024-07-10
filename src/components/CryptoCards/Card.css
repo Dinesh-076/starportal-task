@@ -1,0 +1,142 @@
+/* src/Card.css */
+
+/* Base styles */
+.task_container__ {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #101010;
+    width: 100%;
+    max-height: 350px;
+    padding: 10px 20px;
+  }
+  
+  .task_inner_container {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .task_inner_container:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .card_img__ {
+    height: 80px;
+    flex: 0 0 120px;
+  }
+  
+  .card_img__ img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .card_txt__ {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  
+  .card_title__ {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card_tasks__ {
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+  }
+  
+  .check_mark {
+    margin-left: 200px;
+    color: rgba(255, 255, 255, 0.08);
+    background: transparent;
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (phones, 600px and down) */
+  @media (max-width: 600px) {
+    .task_inner_container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .card_img__ {
+      height: 60px;
+      flex: 0 0 100px;
+    }
+  
+    .card_txt__ {
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .card_tasks__ {
+      justify-content: center;
+    }
+  
+    .check_mark {
+      margin-left: 0;
+    }
+    
+  }
+  
+  /* Medium devices (tablets, 600px to 768px) */
+  @media (min-width: 600px) and (max-width: 768px) {
+    .task_inner_container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .card_img__ {
+      height: 70px;
+      flex: 0 0 110px;
+    }
+  
+    .card_txt__ {
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .card_tasks__ {
+      justify-content: flex-start;
+    }
+  
+    .check_mark {
+      margin-left: 50px;
+    }
+  }
+  
+  /* Large devices (desktops, 768px and up) */
+  @media (min-width: 768px) {
+    .task_inner_container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .card_img__ {
+      height: 80px;
+      flex: 0 0 120px;
+    }
+  
+    .card_txt__ {
+      align-items: flex-start;
+      gap: 25px;
+    }
+  
+    .card_tasks__ {
+      justify-content: flex-start;
+    }
+  
+    .check_mark {
+      margin-left: 200px;
+    }
+  }
+  

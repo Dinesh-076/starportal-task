@@ -1,0 +1,140 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 20px 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #bbb;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-disclaimer {
+  border-top: 1px solid #444;
+  padding: 10px 0px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer-disclaimer p {
+  margin: 0;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 1200px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer-disclaimer p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+
+  .footer-section h4 {
+    font-size: 14px;
+  }
+
+  .footer-disclaimer p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
